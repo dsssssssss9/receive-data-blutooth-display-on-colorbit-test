@@ -67,5 +67,13 @@ colorbit_51bit.showColorIcon(ColorIcon.Yes, colorbit.colors(BitColors.Red))
 basic.pause(1000)
 colorbit_51bit.clear()
 basic.forever(function () {
-    colorbit_51bit.showIntColor(Dice, colorbit.colors(BitColors.Green))
+    for (let Loop1 = 0; Loop1 <= 4; Loop1++) {
+        for (let Loop2 = 0; Loop2 <= 4; Loop2++) {
+            if (led.pointBrightness(Loop1, Loop2) > 0) {
+                colorbit_51bit.drawColorBit(Loop1, Loop2, colorbit.colors(BitColors.White))
+            } else {
+                colorbit_51bit.drawColorBit(Loop1, Loop2, colorbit.colors(BitColors.Black))
+            }
+        }
+    }
 })
