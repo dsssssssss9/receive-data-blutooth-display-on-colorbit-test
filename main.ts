@@ -69,7 +69,7 @@ colorbit_51bit.clear()
 basic.forever(function () {
     for (let Loop1 = 0; Loop1 <= 4; Loop1++) {
         for (let Loop2 = 0; Loop2 <= 4; Loop2++) {
-            if (led.pointBrightness(Loop1, Loop2) > 0) {
+            if (led.point(Loop1, Loop2)) {
                 colorbit_51bit.drawColorBit(Loop1, Loop2, colorbit.colors(BitColors.White))
             } else {
                 colorbit_51bit.drawColorBit(Loop1, Loop2, colorbit.colors(BitColors.Black))
