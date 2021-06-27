@@ -66,6 +66,7 @@ colorbit_51bit.show()
 colorbit_51bit.showColorIcon(ColorIcon.Yes, colorbit.colors(BitColors.Red))
 basic.pause(1000)
 colorbit_51bit.clear()
+led.setBrightness(0)
 basic.forever(function () {
     for (let Loop1 = 0; Loop1 <= 4; Loop1++) {
         for (let Loop2 = 0; Loop2 <= 4; Loop2++) {
